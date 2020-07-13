@@ -36,10 +36,6 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnQuanLyCauHoi = new System.Windows.Forms.Button();
             this.btnQuanLyLichPhat = new System.Windows.Forms.Button();
-            this.ucCauTraLoi1 = new DoAnCuoiKi.ucCauTraLoi();
-            this.ucCauTraLoi2 = new DoAnCuoiKi.ucCauTraLoi();
-            this.ucCauTraLoi3 = new DoAnCuoiKi.ucCauTraLoi();
-            this.ucCauTraLoi4 = new DoAnCuoiKi.ucCauTraLoi();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,6 +43,10 @@
             this.txtCountDown = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnThongKeKQ = new System.Windows.Forms.Button();
+            this.ucCauTraLoiA = new DoAnCuoiKi.ucCauTraLoi();
+            this.ucCauTraLoiB = new DoAnCuoiKi.ucCauTraLoi();
+            this.ucCauTraLoiC = new DoAnCuoiKi.ucCauTraLoi();
+            this.ucCauTraLoiD = new DoAnCuoiKi.ucCauTraLoi();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,50 +122,6 @@
             this.btnQuanLyLichPhat.Text = "Quản Lý Lịch Phát GameShow";
             this.btnQuanLyLichPhat.UseVisualStyleBackColor = false;
             // 
-            // ucCauTraLoi1
-            // 
-            this.ucCauTraLoi1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucCauTraLoi1.LaCauTraLoi = false;
-            this.ucCauTraLoi1.Location = new System.Drawing.Point(28, 402);
-            this.ucCauTraLoi1.Name = "ucCauTraLoi1";
-            this.ucCauTraLoi1.NoiDung = "";
-            this.ucCauTraLoi1.Size = new System.Drawing.Size(540, 70);
-            this.ucCauTraLoi1.TabIndex = 11;
-            this.ucCauTraLoi1.TieuDe = "A";
-            // 
-            // ucCauTraLoi2
-            // 
-            this.ucCauTraLoi2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucCauTraLoi2.LaCauTraLoi = false;
-            this.ucCauTraLoi2.Location = new System.Drawing.Point(28, 478);
-            this.ucCauTraLoi2.Name = "ucCauTraLoi2";
-            this.ucCauTraLoi2.NoiDung = "";
-            this.ucCauTraLoi2.Size = new System.Drawing.Size(540, 70);
-            this.ucCauTraLoi2.TabIndex = 12;
-            this.ucCauTraLoi2.TieuDe = "B";
-            // 
-            // ucCauTraLoi3
-            // 
-            this.ucCauTraLoi3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucCauTraLoi3.LaCauTraLoi = false;
-            this.ucCauTraLoi3.Location = new System.Drawing.Point(28, 554);
-            this.ucCauTraLoi3.Name = "ucCauTraLoi3";
-            this.ucCauTraLoi3.NoiDung = "";
-            this.ucCauTraLoi3.Size = new System.Drawing.Size(540, 70);
-            this.ucCauTraLoi3.TabIndex = 13;
-            this.ucCauTraLoi3.TieuDe = "C";
-            // 
-            // ucCauTraLoi4
-            // 
-            this.ucCauTraLoi4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ucCauTraLoi4.LaCauTraLoi = false;
-            this.ucCauTraLoi4.Location = new System.Drawing.Point(28, 630);
-            this.ucCauTraLoi4.Name = "ucCauTraLoi4";
-            this.ucCauTraLoi4.NoiDung = "";
-            this.ucCauTraLoi4.Size = new System.Drawing.Size(540, 70);
-            this.ucCauTraLoi4.TabIndex = 14;
-            this.ucCauTraLoi4.TieuDe = "D";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Salmon;
@@ -213,14 +169,14 @@
             this.txtCountDown.Location = new System.Drawing.Point(809, 417);
             this.txtCountDown.Multiline = true;
             this.txtCountDown.Name = "txtCountDown";
-            this.txtCountDown.Size = new System.Drawing.Size(279, 45);
+            this.txtCountDown.Size = new System.Drawing.Size(328, 45);
             this.txtCountDown.TabIndex = 19;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(813, 428);
+            this.label3.Location = new System.Drawing.Point(830, 428);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(266, 25);
             this.label3.TabIndex = 20;
@@ -237,11 +193,59 @@
             this.btnThongKeKQ.Text = "Thống kê kết quả";
             this.btnThongKeKQ.UseVisualStyleBackColor = false;
             // 
+            // ucCauTraLoiA
+            // 
+            this.ucCauTraLoiA.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ucCauTraLoiA.LaCauTraLoi = false;
+            this.ucCauTraLoiA.Location = new System.Drawing.Point(28, 402);
+            this.ucCauTraLoiA.Name = "ucCauTraLoiA";
+            this.ucCauTraLoiA.NoiDung = "";
+            this.ucCauTraLoiA.Size = new System.Drawing.Size(540, 70);
+            this.ucCauTraLoiA.TabIndex = 22;
+            this.ucCauTraLoiA.TieuDe = "A";
+            // 
+            // ucCauTraLoiB
+            // 
+            this.ucCauTraLoiB.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ucCauTraLoiB.LaCauTraLoi = false;
+            this.ucCauTraLoiB.Location = new System.Drawing.Point(28, 478);
+            this.ucCauTraLoiB.Name = "ucCauTraLoiB";
+            this.ucCauTraLoiB.NoiDung = "";
+            this.ucCauTraLoiB.Size = new System.Drawing.Size(540, 70);
+            this.ucCauTraLoiB.TabIndex = 23;
+            this.ucCauTraLoiB.TieuDe = "B";
+            // 
+            // ucCauTraLoiC
+            // 
+            this.ucCauTraLoiC.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ucCauTraLoiC.LaCauTraLoi = false;
+            this.ucCauTraLoiC.Location = new System.Drawing.Point(28, 554);
+            this.ucCauTraLoiC.Name = "ucCauTraLoiC";
+            this.ucCauTraLoiC.NoiDung = "";
+            this.ucCauTraLoiC.Size = new System.Drawing.Size(540, 70);
+            this.ucCauTraLoiC.TabIndex = 24;
+            this.ucCauTraLoiC.TieuDe = "C";
+            // 
+            // ucCauTraLoiD
+            // 
+            this.ucCauTraLoiD.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ucCauTraLoiD.LaCauTraLoi = false;
+            this.ucCauTraLoiD.Location = new System.Drawing.Point(28, 630);
+            this.ucCauTraLoiD.Name = "ucCauTraLoiD";
+            this.ucCauTraLoiD.NoiDung = "";
+            this.ucCauTraLoiD.Size = new System.Drawing.Size(540, 70);
+            this.ucCauTraLoiD.TabIndex = 25;
+            this.ucCauTraLoiD.TieuDe = "D";
+            // 
             // Host
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1238, 725);
+            this.Controls.Add(this.ucCauTraLoiD);
+            this.Controls.Add(this.ucCauTraLoiC);
+            this.Controls.Add(this.ucCauTraLoiB);
+            this.Controls.Add(this.ucCauTraLoiA);
             this.Controls.Add(this.btnThongKeKQ);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCountDown);
@@ -249,10 +253,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.ucCauTraLoi4);
-            this.Controls.Add(this.ucCauTraLoi3);
-            this.Controls.Add(this.ucCauTraLoi2);
-            this.Controls.Add(this.ucCauTraLoi1);
             this.Controls.Add(this.btnQuanLyLichPhat);
             this.Controls.Add(this.btnQuanLyCauHoi);
             this.Controls.Add(this.btnNext);
@@ -289,5 +289,9 @@
         private System.Windows.Forms.TextBox txtCountDown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnThongKeKQ;
+        private ucCauTraLoi ucCauTraLoiA;
+        private ucCauTraLoi ucCauTraLoiB;
+        private ucCauTraLoi ucCauTraLoiC;
+        private ucCauTraLoi ucCauTraLoiD;
     }
 }

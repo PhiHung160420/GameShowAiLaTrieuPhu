@@ -87,7 +87,6 @@
             this.ClientSize = new System.Drawing.Size(1220, 506);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvThongKeKQ);
-            this.Name = "ThongKeKetQua";
             this.Text = "ThongKeKetQua";
             this.ResumeLayout(false);
             this.PerformLayout();
