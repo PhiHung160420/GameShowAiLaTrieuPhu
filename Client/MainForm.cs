@@ -8,13 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoAnCuoiKi
+namespace Client
 {
     public partial class MainForm : Form
     {
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btnBegin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ConnectToServer connect = new ConnectToServer();
+            connect.ShowDialog();
+            this.Close();
         }
     }
 }

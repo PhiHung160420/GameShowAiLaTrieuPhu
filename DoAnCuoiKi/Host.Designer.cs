@@ -104,23 +104,25 @@
             // 
             this.btnQuanLyCauHoi.BackColor = System.Drawing.Color.YellowGreen;
             this.btnQuanLyCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLyCauHoi.Location = new System.Drawing.Point(94, 109);
+            this.btnQuanLyCauHoi.Location = new System.Drawing.Point(49, 99);
             this.btnQuanLyCauHoi.Name = "btnQuanLyCauHoi";
-            this.btnQuanLyCauHoi.Size = new System.Drawing.Size(384, 63);
+            this.btnQuanLyCauHoi.Size = new System.Drawing.Size(474, 73);
             this.btnQuanLyCauHoi.TabIndex = 9;
             this.btnQuanLyCauHoi.Text = "Quản Lý Câu Hỏi";
             this.btnQuanLyCauHoi.UseVisualStyleBackColor = false;
+            this.btnQuanLyCauHoi.Click += new System.EventHandler(this.btnQuanLyCauHoi_Click);
             // 
             // btnQuanLyLichPhat
             // 
             this.btnQuanLyLichPhat.BackColor = System.Drawing.Color.YellowGreen;
             this.btnQuanLyLichPhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLyLichPhat.Location = new System.Drawing.Point(739, 109);
+            this.btnQuanLyLichPhat.Location = new System.Drawing.Point(691, 99);
             this.btnQuanLyLichPhat.Name = "btnQuanLyLichPhat";
-            this.btnQuanLyLichPhat.Size = new System.Drawing.Size(384, 63);
+            this.btnQuanLyLichPhat.Size = new System.Drawing.Size(442, 73);
             this.btnQuanLyLichPhat.TabIndex = 10;
             this.btnQuanLyLichPhat.Text = "Quản Lý Lịch Phát GameShow";
             this.btnQuanLyLichPhat.UseVisualStyleBackColor = false;
+            this.btnQuanLyLichPhat.Click += new System.EventHandler(this.btnQuanLyLichPhat_Click);
             // 
             // button1
             // 

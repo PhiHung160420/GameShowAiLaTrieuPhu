@@ -16,5 +16,17 @@ namespace DoAnCuoiKi
         {
             InitializeComponent();
         }
+
+        private void btnQuanLyCauHoi_Click(object sender, EventArgs e)
+        {
+            QuanLyCauHoi QLCH = new QuanLyCauHoi();
+            QLCH.Show();
+        }
+
+        private void btnQuanLyLichPhat_Click(object sender, EventArgs e)
+        {
+            QuanLyGameShow QLgameshow = new QuanLyGameShow();
+            QLgameshow.Show();
+        }
     }
 }
