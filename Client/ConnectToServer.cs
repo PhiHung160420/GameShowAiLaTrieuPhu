@@ -24,5 +24,15 @@ namespace Client
             player.ShowDialog();
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxIP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

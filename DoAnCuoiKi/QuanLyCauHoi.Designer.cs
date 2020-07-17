@@ -50,6 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblA = new System.Windows.Forms.Label();
             this.dgvQuanLy = new System.Windows.Forms.DataGridView();
+            this.cauHoiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.answerADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,12 +58,11 @@
             this.answerCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.answerDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.answerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbChucNang.SuspendLayout();
             this.gbQuestion.SuspendLayout();
             this.gbTraLoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cauHoiBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gbChucNang
@@ -273,7 +273,7 @@
             this.answerCDataGridViewTextBoxColumn,
             this.answerDDataGridViewTextBoxColumn,
             this.answerDataGridViewTextBoxColumn});
-            this.dgvQuanLy.DataSource = this.questionBindingSource;
+            this.dgvQuanLy.DataSource = this.cauHoiBindingSource;
             this.dgvQuanLy.Location = new System.Drawing.Point(12, 2);
             this.dgvQuanLy.Name = "dgvQuanLy";
             this.dgvQuanLy.RowHeadersWidth = 62;
@@ -282,13 +282,17 @@
             this.dgvQuanLy.TabIndex = 3;
             this.dgvQuanLy.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLy_CellClick);
             // 
+            // cauHoiBindingSource
+            // 
+            this.cauHoiBindingSource.DataSource = typeof(DTOpoj.CauHoi);
+            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Width = 50;
+            this.iDDataGridViewTextBoxColumn.Width = 150;
             // 
             // contentDataGridViewTextBoxColumn
             // 
@@ -296,7 +300,7 @@
             this.contentDataGridViewTextBoxColumn.HeaderText = "Content";
             this.contentDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.contentDataGridViewTextBoxColumn.Name = "contentDataGridViewTextBoxColumn";
-            this.contentDataGridViewTextBoxColumn.Width = 300;
+            this.contentDataGridViewTextBoxColumn.Width = 150;
             // 
             // answerADataGridViewTextBoxColumn
             // 
@@ -338,10 +342,6 @@
             this.answerDataGridViewTextBoxColumn.Name = "answerDataGridViewTextBoxColumn";
             this.answerDataGridViewTextBoxColumn.Width = 150;
             // 
-            // questionBindingSource
-            // 
-            this.questionBindingSource.DataSource = typeof(DoAnCuoiKi.Question);
-            // 
             // QuanLyCauHoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -360,7 +360,7 @@
             this.gbTraLoi.ResumeLayout(false);
             this.gbTraLoi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cauHoiBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -395,6 +395,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn answerCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn answerDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn answerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource questionBindingSource;
+        private System.Windows.Forms.BindingSource cauHoiBindingSource;
     }
 }

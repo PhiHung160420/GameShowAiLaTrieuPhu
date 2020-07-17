@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DoAnCuoiKi
+namespace DTOpoj
 {
+    [Serializable()]
     public class CauHoi
     {
         public int ID { get; set; }

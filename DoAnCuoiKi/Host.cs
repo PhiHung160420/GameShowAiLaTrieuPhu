@@ -28,5 +28,10 @@ namespace DoAnCuoiKi
             QuanLyGameShow QLgameshow = new QuanLyGameShow();
             QLgameshow.Show();
         }
+
+        private void Host_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

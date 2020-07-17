@@ -53,6 +53,13 @@
     <Compile Include="Host.Designer.cs">
       <DependentUpon>Host.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListPlayercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListPlayercs.Designer.cs">
+      <DependentUpon>ListPlayercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerScore.cs" />
     <Compile Include="QuanLyCauHoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +90,9 @@
     <EmbeddedResource Include="Host.resx">
       <DependentUpon>Host.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListPlayercs.resx">
+      <DependentUpon>ListPlayercs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyCauHoi.resx">
       <DependentUpon>QuanLyCauHoi.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +115,8 @@
     <EmbeddedResource Include="ucCauTraLoi.resx">
       <DependentUpon>ucCauTraLoi.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\DTOpoj.CauHoi.datasource" />
+    <None Include="Properties\DataSources\DTOpoj.NguoiChoi.datasource" />
     <None Include="Properties\DataSources\GameShow.datasource" />
     <None Include="Properties\DataSources\Question.datasource" />
     <None Include="Properties\Settings.settings">
@@ -119,6 +131,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTOpoj\DTOpoj.csproj">
+      <Project>{eb55930f-c8fd-4b23-992f-d9be072e18fe}</Project>
+      <Name>DTOpoj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLib\MyLib.csproj">
+      <Project>{6064226d-8912-4d50-98d3-06bc92525798}</Project>
+      <Name>MyLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

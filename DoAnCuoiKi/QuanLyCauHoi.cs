@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTOpoj;
+//using MyLib;
 
 namespace DoAnCuoiKi
 {
@@ -24,13 +26,13 @@ namespace DoAnCuoiKi
         {
             StreamReader sr = new StreamReader(Path);
 
-            List<Question> lstCauHoi = new List<Question>();
+            List<CauHoi> lstCauHoi = new List<CauHoi>();
 
             List<string> ListAnswer = null;
 
             string line = null;
 
-            Question cauHoi = null;
+            CauHoi cauHoi = null;
 
             int i = 1;
 
@@ -38,7 +40,7 @@ namespace DoAnCuoiKi
             {
                 if (line.StartsWith("@"))
                 {
-                    cauHoi = new Question();
+                    cauHoi = new CauHoi();
                     ListAnswer = new List<string>();
                     cauHoi.ID = i;
                     cauHoi.Content = line.Substring(1);
@@ -46,6 +48,7 @@ namespace DoAnCuoiKi
                 if (line.StartsWith("&"))
                 {
                     ListAnswer.Add(line.Substring(1));
+                    cauHoi.DSCauTraLoi.Add(line.Substring(1));
                 }
                 if (line.StartsWith("#"))
                 {
@@ -122,9 +125,9 @@ namespace DoAnCuoiKi
             IsAdd = true;
         }
 
-        private Question GetContentQuestion()
+        private CauHoi GetContentQuestion()
         {
-            Question cauHoi = new Question();
+            CauHoi cauHoi = new CauHoi();
 
             cauHoi.Content = tbxQuestion.Text;
 
@@ -137,7 +140,7 @@ namespace DoAnCuoiKi
 
             return cauHoi;
         }
-        private bool SaveToFlie(Question cauHoi)
+        private bool SaveToFlie(CauHoi cauHoi)
         {
             List<string> ListAnswer = new List<string>();
             ListAnswer.Add(cauHoi.AnswerA);
@@ -167,7 +170,7 @@ namespace DoAnCuoiKi
             btnNotSave.Enabled = false;
             if(IsAdd)
             {
-                Question question = GetContentQuestion();
+                CauHoi question = GetContentQuestion();
                 if (question != null)
                 {
                     bool SaveSuccess = SaveToFlie(question);
